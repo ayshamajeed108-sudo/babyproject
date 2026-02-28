@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# Baby Product Safety Analyzer 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Bitbybit
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Biniya Rose - Vidya Academy of Science and Technology
+- Member 2: Aysha Abdul Majeed - Vidya Academy of Science and Technology
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://babyproject-h3tm.onrender.com/
 
 ### Project Description
-[2-3 lines about what your project does]
+The Baby Product Safety Analyzer is an interactive data-driven dashboard that helps parents and caregivers verify the safety status of infant gear. It utilizes a synthetic dataset of 1,000+ records to simulate real-world safety certifications, recall alerts, and hazard identifications across categories like Sleep, Travel, and Toys.
 
 ### The Problem statement
-[What problem are you solving?]
+With thousands of baby products on the market, parents often struggle to track active recalls or understand complex safety standards (like ASTM or CPSC). Fragmented information makes it difficult to quickly verify if a specific second-hand item or gift meets current safety regulations, leading to potential risks like suffocation or choking hazards.
 
 ### The Solution
-[How are you solving it?]
+This project provides a centralized, searchable interface built with Streamlit and Python. By clicking a single button, the system generates a comprehensive safety database. Users can then instantly query any product to receive a "Safety Analysis" report that includes certification details, age-appropriateness, and specific safety tips to mitigate common hazards.
 
 ---
 
@@ -31,15 +31,16 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+-Languages used: Python (3.9+)
+-Frameworks used: Streamlit (for the Web UI)
+-Libraries used: * pandas: For data manipulation and search filtering.
+-json: For data structure handling.
+-random: For synthetic data generation.
+-Tools used: VS Code, Git/GitHub, Streamlit Cloud (for deployment).
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+-This is a software-based analytical tool, so no physical hardware components are required beyond a computer with a web browser.
+
 
 ---
 
