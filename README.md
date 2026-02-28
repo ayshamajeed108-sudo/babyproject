@@ -38,19 +38,18 @@ This project provides a centralized, searchable interface built with Streamlit a
 -random: For synthetic data generation.
 -Tools used: VS Code, Git/GitHub, Streamlit Cloud (for deployment).
 
-**For Hardware:**
--This is a software-based analytical tool, so no physical hardware components are required beyond a computer with a web browser.
-
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+
+Instant Data Generation: A one-click mechanism to populate a mock database of 1,000 unique safety records using weighted probability (e.g., 5% recall rate).
+Intelligent Search: A case-insensitive search engine that allows users to find products by brand name or item type (Crib, Stroller, etc.).
+Visual Safety Status: A color-coded reporting system (Green for Verified Safe, Yellow for Alerts, Red for Active Recalls) for immediate risk assessment.
+Hazard Awareness: Dynamically maps specific hazards (like "Positional Asphyxia" or "Choking Hazard") to products based on their safety status.
+Safety Tip Integration: Provides actionable manufacturer-style advice for every product queried to ensure proper setup and usage.
 
 ---
 
@@ -59,22 +58,18 @@ List the key features of your project:
 ### For Software:
 
 #### Installation
-```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
-```
+First, ensure you have Python installed, then install the two necessary libraries:
+
+Bash
+pip install streamlit pandas
 
 #### Run
-```bash
-[Run commands - e.g., npm start, python app.py]
-```
+Navigate to the folder containing your script (e.g., app.py) and launch the Streamlit server:
 
-### For Hardware:
+Bash
+streamlit run app.py
 
-#### Components Required
-[List all components needed with specifications]
 
-#### Circuit Setup
-[Explain how to set up the circuit]
 
 ---
 
@@ -84,38 +79,27 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1]Dashboard Overview: This shows the landing page before data generation, prompting the user to initialize the safety database.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]Product Safety Report: Displays the color-coded status (e.g., Green for "Verified Safe") and the detailed breakdown of certifications like ASTM and CPSC.
 
 #### Diagrams
 
 **System Architecture:**
 
 ![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+User Interface: Built with Streamlit, providing a reactive frontend for user inputs.
+
+Application Logic: Python backend handles the weighted random generation of safety data.
+
+Data Layer: Uses Pandas DataFrames stored in st.session_state for high-speed in-memory searching and filtering without needing an external database.
+
+Output Engine: Transforms raw JSON-like data into visual alerts (Success/Warning/Error boxes) for the end-user.
 
 **Application Workflow:**
 
 ![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
 
----
-
-### For Hardware:
-
-#### Schematic & Circuit
-
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
 #### Build Photos
 
@@ -178,11 +162,7 @@ List the key features of your project:
 
 ### For Mobile Apps:
 
-#### App Flow Diagram
-
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
-
+  
 #### Installation Guide
 
 **For Android (APK):**
@@ -214,54 +194,6 @@ flutter build ios
 xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
 ```
 
----
-
-### For Hardware Projects:
-
-#### Bill of Materials (BOM)
-
-| Component | Quantity | Specifications | Price | Link/Source |
-|-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
-
-**Total Estimated Cost:** ₹[Amount]
-
-#### Assembly Instructions
-
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
-
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
-
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
-
-**Step 4: [Continue for all steps...]**
-
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
-
----
 
 ### For Scripts/CLI Tools:
 
